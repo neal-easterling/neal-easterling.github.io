@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+body.githubStyle{
+    background-color: #0D1117;
+    align-items: center;
+}
+body.mainStyle{
+    height: 100vh;
+    background-image: linear-gradient(135deg, #023a50, #280747);
+    color: #333;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+.mainStyle .card{
+    max-width: 90%;
+    max-height: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+    background-color: #dedede;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 5rem rgb(2, 102, 141);
+}
+.userIcon{
+    width: 12rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #999;
+    box-shadow: inset 0 2rem #333;
+}
+.userIcon img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bio p{
+    padding-left: 1rem;
+}
