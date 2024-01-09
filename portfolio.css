@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -26,9 +26,12 @@ h1{
 h2{
     font-size: 2.5rem;
 }
+p{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
 .mainStyle .card{
     max-width: 90%;
-    max-height: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,6 +42,25 @@ h2{
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 0 0 5rem rgb(2, 102, 141);
+}
+.bioBox{
+    max-height: 15rem;
+}
+.mainStyle .card .container {
+    max-width:50%;
+}
+.mainStyle .container.hero{
+    max-height: 95%;
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainStyle .container img.vHero{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
 .userIcon{
     width: 12rem;
