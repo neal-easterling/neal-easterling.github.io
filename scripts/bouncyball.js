@@ -46,7 +46,7 @@ const createBall = () => {
 }
 
 const dropBalls = () => {
-    for(let i=0; i<15; i++){
+    for(let i=0; i<10; i++){
         createBall();
     }
     const container = document.getElementById('bounceContainer');
