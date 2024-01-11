@@ -24,8 +24,8 @@
                     const cyPos = parseInt(ball.dataset.yposition);
 
                     //Check Edges & Get Current Direction
-                    if(cxPos > 85) ball.dataset.xdirection = '-1';
-                    if(cxPos < 5) ball.dataset.xdirection = '1';
+                    if(cxPos > 93) ball.dataset.xdirection = '-1';
+                    if(cxPos < 4) ball.dataset.xdirection = '1';
                     if(cyPos < 5) ball.dataset.ydirection = '1';
                     if(cyPos > 85) ball.dataset.ydirection = '-1';
                     const cxDir = parseInt(ball.dataset.xdirection);
