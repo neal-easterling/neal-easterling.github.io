@@ -30,7 +30,7 @@ body{
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
-    font-size: 5rem;
+    font-size: 4rem;
     color: #555;
 }
 #dropBalls, #dissolveBalls{
