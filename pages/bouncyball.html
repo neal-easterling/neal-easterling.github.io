@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncy Ball</title>
+    <link rel="stylesheet" href="../styles/bouncyball.css">
+    
+</head>
+<body>
+    <button id="dropBalls" onclick="dropBalls()">Drop </button>
+    <div id="bounceContainer" class="container">
+        <h1>Bouncy Balls</h1>
+    </div>
+    <button id="dissolveBalls" onclick="dissolveBalls()">Dissolve</button>
+    
+    <script src="../scripts/bouncyball.js"></script>
+    <script>
+        setInterval(()=>{
+            if(active){
+                loadedBalls.forEach((ball)=>{
+                    //Get Current Position
+                    const cxPos = parseInt(ball.dataset.xposition);
+                    const cyPos = parseInt(ball.dataset.yposition);
+
+                    //Check Edges & Get Current Direction
+                    if(cxPos > 85) ball.dataset.xdirection = '-1';
+                    if(cxPos < 5) ball.dataset.xdirection = '1';
+                    if(cyPos < 5) ball.dataset.ydirection = '1';
+                    if(cyPos > 85) ball.dataset.ydirection = '-1';
+                    const cxDir = parseInt(ball.dataset.xdirection);
+                    const cyDir = parseInt(ball.dataset.ydirection);
+
+
+                    const xVel = parseInt(ball.dataset.xvelocity);
+                    const yVel = parseInt(ball.dataset.yvelocity);
+
+                    //Calc New
+                    const nxPos = cxPos + (xVel * cxDir);
+                    const nyPos = cyPos + (yVel * cyDir);
+                    
+                    //set new data and style
+                    ball.dataset.xposition = `${nxPos}`;
+                    ball.dataset.yposition =  `${nyPos}`;
+                    ball.style.left = `${nxPos}%`;
+                    ball.style.top = `${nyPos}%`;
+                    
+                });
+            }
+        }, 100);
+        
+    </script>
+</body>
+</html>

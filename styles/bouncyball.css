@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+#bounceContainer{
+    position: relative;
+    width:60%;
+    height: 40%;
+    margin: 0.3rem;
+    border: 3px solid #555;
+    background-color: #444;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px rgba(10,10,10, 0.5);
+}
+#bounceContainer h1{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    color: #555;
+}
+#dropBalls, #dissolveBalls{
+    width: 200px;
+    padding: 1rem;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 8px rgba(10,10,10, 0.5);
+}
+#addBall:hover{
+    background-color: #444;
+}
+.ball{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(255,0,0);
+    opacity: 100%;
+}
+.dissolve{
+    transition: opacity 2000ms ease-out;
+    opacity: 0%;
+}
+button{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
