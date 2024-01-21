@@ -23,10 +23,10 @@ body{
     background-color: #ddd;
     border-radius: 1rem;
     box-shadow: 0 0 15px rgba(50,50,50, 0.4);
+    cursor: none;
 }
 #brush{
     position: absolute;
-    width: 30px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     z-index: 1000;
@@ -43,4 +43,9 @@ button{
     font-weight: 500;
     padding: 0.3rem;
     box-shadow: 0 0 3px rgba(50,50,50, 0.4);
+}
+.dot{
+    position: absolute;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
