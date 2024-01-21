@@ -24,7 +24,7 @@ body{
     border-radius: 1rem;
     box-shadow: 0 0 15px rgba(50,50,50, 0.4);
 }
-#cursor{
+#brush{
     position: absolute;
     width: 30px;
     aspect-ratio: 1/1;
