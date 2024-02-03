@@ -44,7 +44,7 @@ h2{
     font-size: 7rem;
 }
 h5{
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 300;
 }
 .frontContainer{
@@ -91,7 +91,7 @@ h5{
     }
     & h5{
         top: 13.3rem;
-        margin-left: 0.3rem;
+        left: 0.5rem;
         @media screen and (max-width: 980px){
             font-size: 0.55rem;
             top: 8.5rem;
