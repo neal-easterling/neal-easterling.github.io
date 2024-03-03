@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neal Easterling | Porfolio</title>
+  <title>Neal Easterling | Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="with-particles">
+  <div class="particleContainer"></div>
   
+  <div class="content-container">
+    <nav>
+      <button class="icon-but hamburger clickable-icon">
+        <svg id="ne-nav-icon" class="icon icon-hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="horizontal top" y="27"></rect>
+            <rect class="horizontal middle" y="47" ></rect>
+            <rect class="horizontal bottom" y="67" ></rect>
+        </svg>
+      </button>
+      <ul id="ne-nav-menu" class="ne-gradient ne-box-style ne-bg-blur">
+        <li>home</li>
+        <li><a href="./pages/projects.html">projects</a></li>
+      </ul>
+    </nav>
+    <section class="main-container">
+      <div class="profile-pic cover-img ne-tricolor-box-style"><img class="ne-tricolor-content" src="./img/profile-sq.png" alt="Neal's profile photo"></div>
+      <div class="social-container">
+        <a href="https://www.linkedin.com/in/neal-easterling/" target="_blank"><img src="./img/svg/color/linkedIn-color.svg" alt="LinkedIn Icon" ></a>
+        <a href="https://github.com/neal-easterling" target="_blank"><img src="./img/svg/color/github-color.svg" alt="GitHub Icon" ></a>
+        <a href="https://twitter.com/Neal_Easterling" target="_blank"><img src="./img/svg/color/x-twitter-color.svg" alt="x, twitter icon" ></a>
+        <a href="https://www.youtube.com/@apps4everyone" target="_blank"><img src="./img/svg/color/youtube-color.svg" alt="youtube icon" ></a>
+        <a href="mailto:neal.easterling@gmail.com" target="_blank"><img src="./img/svg/color/email-icon.svg" alt="youtube icon" ></a>
+      </div>
+      <div class="title-container ne-bg-blur">
+        <h1>Neal</h1>
+        <h1>Easterling</h1>
+        <h3>neal-easterling &#x2022; he/him </h3>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/o6gImhnP-7M?si=VAcDoL_U1qRzg8eJ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="bio-container ne-tricolor-box-style">
+        <p class="ne-tricolor-content">Full-stack web developer who brings over 15 years of experience in digital media development in graphics, video, and web, event planning, and sales through roles in arts administration and marketing. Additionally, have utilized strong communication, management, and collaboration skills during 7+ years of teaching K-12 and adult professional development in technology.</p>
+      </div>
+
+    </section>
+  </div>
+    
+<script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
