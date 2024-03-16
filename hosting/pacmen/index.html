@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMen Exercise</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+        }
+        #buttonContainer{
+            padding: 2rem;
+        }
+        button{
+            height: 2.5rem;
+            border-radius: 1.25rem;
+            padding: 0.25rem 1rem;
+        }
+        button:hover{
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+        .yellow{
+            border: 2px solid blue;
+            background-color: yellow;
+            color: blue;
+        }
+        .blue{
+            border: 2px solid yellow;
+            background-color: blue;
+            color: yellow;
+        }
+        #game{
+            width: 70vh;
+            height: 70vh;
+            border: 10px solid blue;
+            border-radius: 1rem;
+        }
+    </style>
+    <div id="buttonContainer">
+        <button class="yellow" onclick='makeOne()'>Add PacMan</button>
+        <button class="blue" onclick='update()'>Start Game</button>
+    </div>
+    <div id='game'></div>
+    <script src="./pacmen.js"></script>
+</body>
+</html>
